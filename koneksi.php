@@ -3,10 +3,10 @@
  * using mysqli_connect for database connection
  */
 
-$databaseHost = '172.20.0.3';
+$databaseHost = 'localhost';
 $databaseName = 'mobildinaspendidikan';
 $databaseUsername = 'root';
-$databasePassword = 'YuuCh4n';
+$databasePassword = '';
 
 $koneksi = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
 
