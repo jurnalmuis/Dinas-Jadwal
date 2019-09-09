@@ -6,7 +6,8 @@
 <div align="center"><a href="inputpemesanan.php" class="btn btn-primary">Tambah Data</a></div><Br>
 
  <table align="center" border="0" class="table table-striped table-sm">
- 		<tr>
+   <thead class="thead-dark">
+    <tr>
  			<td width=""><b>Waktu</td>
  			<td width=""><b>Tanggal Peminjaman</td>
  			<td width=""><b>Tanggal Pengembalian</td>
@@ -17,6 +18,7 @@
        <td width=""><b>Bidang</td>
  			<td colspan="2" align=center><b>AKSI</b></td>
  		</tr>
+  </thead>
          <tr>
  		<?php
  			include 'koneksi.php';
