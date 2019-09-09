@@ -18,6 +18,7 @@ $cek = mysqli_num_rows($data);
 if($cek > 0){
 	$_SESSION['username'] = $username;
 	$_SESSION['status'] = "login";
+	$_SESSION['sukses'] = 1;
 	header("location:beranda.php");
 }else{
 	header("location:index.php?pesan=gagal");

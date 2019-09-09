@@ -1,3 +1,10 @@
+
+<?php
+session_start();
+if($_SESSION['sukses']<1){
+  header("location:index.php?pesan=belum_login");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,12 +29,7 @@
 
 <body id="page-top">
   <!-- Cek Session Sudah Login Belum-->
-  <?php
-	session_start();
-	if($_SESSION['status']!="login"){
-		header("location:index.php?pesan=belum_login");
-	}
-	?>
+
   <!-- Cek Session Sudah Login Belum-->
 
   <!-- Page Wrapper -->
