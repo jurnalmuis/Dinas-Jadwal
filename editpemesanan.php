@@ -5,9 +5,10 @@
 	$id = $_GET['idpemesanan'];
 	$data = mysqli_query($koneksi,"select * from pemesanan where idpemesanan='$id'");
 	while($d = mysqli_fetch_array($data)){
-		?>
+
+	?>
 <div align=center>
-  <h3>Tambah Driver</h3>
+  <h3>Update Pemesanan</h3>
     <form action="prosesupdatepemesanan.php" method="post" name="update_driver">
         <table width="25%" border="0">
             <tr>
@@ -16,11 +17,11 @@
             </tr>
             <tr>
                 <td>Waktu</td>
-                <td><input class="form-control form-control-sm" type="time" name="waktu" value="<?php echo $d['waktu']; ?>" ></td>
+                <td><input class="form-control form-control-sm" type="time" name="waktu" value="<?php echo $d['waktu']; ?>" readonly></td>
             </tr>
             <tr>
                 <td>Tanggal Peminjaman</td>
-                <td><input class="form-control form-control-sm" type="date" name="tanggalpeminjaman" value="<?php echo $d['tanggalpeminjaman']; ?>"></td>
+                <td><input class="form-control form-control-sm" type="date" name="tanggalpeminjaman" value="<?php echo $d['tanggalpeminjaman']; ?>" readonly></td>
             </tr>
             <tr>
                 <td>Tanggal Pengembali</td>
@@ -36,7 +37,7 @@
             </tr>
 						<tr>
                 <td>Plat Mobil</td>
-                <td><input class="form-control form-control-sm" type="text" name="platmobil" value="<?php echo $d['platmobil']; ?>"></td>
+                <td><input class="form-control form-control-sm" type="text" name="platmobil" value="<?php echo $d['platmobil']; ?>" readonly></td>
             </tr>
 						<tr>
                 <td>Bidang</td>

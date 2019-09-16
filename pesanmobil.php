@@ -22,7 +22,7 @@
          <tr>
  		<?php
  			include 'koneksi.php';
- 			$query = mysqli_query($koneksi,"SELECT * FROM pemesanan ORDER BY waktu ");
+ 			$query = mysqli_query($koneksi,"SELECT * FROM pemesanan ORDER BY tanggalpeminjaman ");
  while($pemesanan = mysqli_fetch_array($query)){
  	?>
  	<tr>
@@ -35,7 +35,7 @@
       <td><?php echo $pemesanan['tujuan']?></td>
  		<td><?php echo $pemesanan['bidang']?></td>
     <td><a href="editpemesanan.php?idpemesanan=<?php echo $pemesanan['idpemesanan'];?>" class="btn btn-sm btn-primary">EDIT</a></td>
-         <td><a href="hapuspemesanan.php?idpemesanan=<?php echo $pemesanan['idpemesanan']; ?>" class="btn btn-sm btn-danger"  onclick="return confirm('Yakin Hapus?')">HAPUS</a></td>
+         <!--<td><a href="hapuspemesanan.php?idpemesanan=<?php echo $pemesanan['idpemesanan']; ?>" class="btn btn-sm btn-danger"  onclick="return confirm('Yakin Hapus?')">HAPUS</a></td>-->
  		</tr>
  		<?php
  	}

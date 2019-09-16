@@ -1,5 +1,6 @@
 
 <?php
+error_reporting(0);
 session_start();
 if($_SESSION['sukses']<1){
   header("location:index.php?pesan=belum_login");

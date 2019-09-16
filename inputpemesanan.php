@@ -25,10 +25,11 @@ $noUrut++;
 $char = "PMS";
 $kodedr = $char . sprintf("%03s", $noUrut);
 
+
 ?>
 <!-- Begin Page Content -->
 <div align=center>
-  <h3>Tambah Driver</h3>
+  <h3>Tambah Pemesanan</h3>
     <form action="prosespemesanan.php" method="post" name="form1">
         <table width="30%" border="0">
             <tr>
@@ -44,11 +45,7 @@ $kodedr = $char . sprintf("%03s", $noUrut);
                 <td><input class="form-control form-control-sm" type="date" name="tanggalpeminjaman"></td>
             </tr>
             <tr>
-                <td>Tanggal Pengembali</td>
-                <td><input class="form-control form-control-sm" type="date" name="tanggalpengembali"></td>
-            </tr>
-            <tr>
-                <td>Nama</td>
+                <td>Nama Penanggung</td>
                 <td><input class="form-control form-control-sm" type="text" name="namapenanggung"></td>
             </tr>
             <tr>
@@ -57,7 +54,17 @@ $kodedr = $char . sprintf("%03s", $noUrut);
             </tr>
             <tr>
                 <td>Plat Mobil</td>
-                <td><input class="form-control form-control-sm" type="text" name="platmobil"></td>
+                <td>
+                  <select name="platmobil">
+                    <?php
+                    $kuer = "SELECT * FROM `mobil` WHERE status='Ada'";
+                    $haskuer = mysqli_query($koneksi,$kuer);
+                    while($data=mysqli_fetch_array($haskuer)){
+                      echo "<option value='$data[platnomor]'>$data[platnomor]</option>";
+                    }
+                    ?>
+                  </select>
+                </td>
             </tr>
             <tr>
                 <td>Bidang</td>
