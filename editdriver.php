@@ -19,16 +19,12 @@
                 <td><input class="form-control form-control-sm" type="text" name="nama" value="<?php echo $d['nama']; ?>" ></td>
             </tr>
             <tr>
-                <td>Alamat</td>
-                <td><input class="form-control form-control-sm" type="text" name="alamat" value="<?php echo $d['alamat']; ?>"></td>
+                <td>Bidang</td>
+                <td><input class="form-control form-control-sm" type="text" name="bidang" value="<?php echo $d['bidang']; ?>"></td>
             </tr>
             <tr>
                 <td>No HP</td>
                 <td><input class="form-control form-control-sm" type="text" name="nohp" value="<?php echo $d['nohp']; ?>"></td>
-            </tr>
-            <tr>
-                <td>No KTP</td>
-                <td><input class="form-control form-control-sm" type="text" name="noktp" value="<?php echo $d['noktp']; ?>"></td>
             </tr>
             <tr>
                 <td></td>

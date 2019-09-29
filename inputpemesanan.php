@@ -45,6 +45,10 @@ $kodedr = $char . sprintf("%03s", $noUrut);
                 <td><input class="form-control form-control-sm" type="date" name="tanggalpeminjaman"></td>
             </tr>
             <tr>
+                <td>Tanggal Pengembali</td>
+                <td><input class="form-control form-control-sm" type="date" name="tanggalpengembali"></td>
+            </tr>
+            <tr>
                 <td>Nama Penanggung</td>
                 <td><input class="form-control form-control-sm" type="text" name="namapenanggung"></td>
             </tr>
@@ -57,10 +61,10 @@ $kodedr = $char . sprintf("%03s", $noUrut);
                 <td>
                   <select name="platmobil">
                     <?php
-                    $kuer = "SELECT * FROM `mobil` WHERE status='Ada'";
+                    $kuer = "SELECT * FROM `datamobil` WHERE keterangan='Tidak dipakai'";
                     $haskuer = mysqli_query($koneksi,$kuer);
                     while($data=mysqli_fetch_array($haskuer)){
-                      echo "<option value='$data[platnomor]'>$data[platnomor]</option>";
+                      echo "<option value='$data[platmobil]'>$data[platmobil]</option>";
                     }
                     ?>
                   </select>

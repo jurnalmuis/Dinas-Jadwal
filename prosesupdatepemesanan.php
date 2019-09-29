@@ -15,12 +15,6 @@ $tujuan = $_POST['tujuan'];
 
 // update data ke database
 mysqli_query($koneksi,"update pemesanan set waktu='$waktu', tanggalpeminjaman='$tanggalpeminjaman', tanggalpengembali='$tanggalpengembali', namapenanggung='$namapenanggung', nohp='$nohp', platmobil='$platmobil', bidang='$bidang', tujuan='$tujuan'  where idpemesanan='$idpemesanan'");
-if ($tanggalpengembali>''){
-  mysqli_query($koneksi, "UPDATE mobil SET status='Ada' where platnomor='$platmobil'");
-  header("location:pesanmobil.php");
-} else {
-  header("location:pesanmobil.php");
-}
 // mengalihkan halaman kembali ke index.php
-
+header("location:pesanmobil.php");
 ?>

@@ -40,16 +40,12 @@ $kodedr = $char . sprintf("%03s", $noUrut);
                 <td><input class="form-control form-control-sm" type="text" name="nama"></td>
             </tr>
             <tr>
-                <td>Alamat</td>
-                <td><input class="form-control form-control-sm" type="text" name="alamat"></td>
+                <td>Bidang</td>
+                <td><input class="form-control form-control-sm" type="text" name="bidang"></td>
             </tr>
             <tr>
                 <td>No HP</td>
                 <td><input class="form-control form-control-sm" type="text" name="nohp"></td>
-            </tr>
-            <tr>
-                <td>No KTP</td>
-                <td><input class="form-control form-control-sm" type="text" name="noktp"></td>
             </tr>
             <tr>
                 <td></td>

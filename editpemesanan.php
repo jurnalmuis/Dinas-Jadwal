@@ -17,11 +17,11 @@
             </tr>
             <tr>
                 <td>Waktu</td>
-                <td><input class="form-control form-control-sm" type="time" name="waktu" value="<?php echo $d['waktu']; ?>" readonly></td>
+                <td><input class="form-control form-control-sm" type="time" name="waktu" value="<?php echo $d['waktu']; ?>"></td>
             </tr>
             <tr>
                 <td>Tanggal Peminjaman</td>
-                <td><input class="form-control form-control-sm" type="date" name="tanggalpeminjaman" value="<?php echo $d['tanggalpeminjaman']; ?>" readonly></td>
+                <td><input class="form-control form-control-sm" type="date" name="tanggalpeminjaman" value="<?php echo $d['tanggalpeminjaman']; ?>"></td>
             </tr>
             <tr>
                 <td>Tanggal Pengembali</td>
